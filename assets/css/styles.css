@@ -1,0 +1,15 @@
+/* Page-wide styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Main content container area */
+#main-content {
+    max-width: 800px;
+}
+
+/* Primary heading styling */
+h1 {
+    font-weight: bold; 
+}
