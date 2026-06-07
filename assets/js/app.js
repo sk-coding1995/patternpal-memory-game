@@ -43,12 +43,25 @@ cardValues.forEach(value => {
     grid.appendChild(col);
 });
 
-/* Add click event to each card. Reveals the card value when clicked */
+// Track selected cards
+let firstCard = null;
+let secondCard = null;
+
+// Add click event to each card
 document.querySelectorAll(".card").forEach(card => {
 
     card.addEventListener("click", () => {
+        
+        // Reveal card value
+        card.textContent = card.dataset.value;
 
-            // Show hidden value
-            card.textContent = card.dataset.value;
+        // Store first selected card
+        if (!firstCard) {
+            firstCard = card;
+        } else {
+            // Store second selected card
+            secondCard = card;
+        }
+
     });
 });
