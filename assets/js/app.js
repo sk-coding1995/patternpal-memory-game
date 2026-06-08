@@ -47,21 +47,56 @@ cardValues.forEach(value => {
 let firstCard = null;
 let secondCard = null;
 
-// Add click event to each card
+// Prevent user interaction during card check
+let lockBoard = false;
+
+// Attach click events to all cards 
 document.querySelectorAll(".card").forEach(card => {
 
     card.addEventListener("click", () => {
         
+        // Prevent interaction while cards are resetting
+        if (lockBoard) return;
+
+        // Prevent clicking the same card twice
+        if (card === firstCard) return;
+
         // Reveal card value
         card.textContent = card.dataset.value;
 
-        // Store first selected card
         if (!firstCard) {
-            firstCard = card;
+            firstCard = card; 
+            return;
+        }
+        
+        secondCard = card;
+
+        // Lock board during match check
+        lockBoard = true;
+
+        // Check for match
+        if (firstCard.dataset.value === secondCard.dataset.value) {
+
+            // Keep cards revealed
+            resetSelection();
+
         } else {
-            // Store second selected card
-            secondCard = card;
+
+            // Flip cards back after delay
+            setTimeout(() => {
+                firstCard.textContent = "?";
+                secondCard.textContent = "?";
+                resetSelection();
+            }, 1000);
+
         }
 
     });
 });
+
+// Reset selection state
+function resetSelection() {
+    firstCard = null;
+    secondCard = null;
+    lockBoard = false;
+}
