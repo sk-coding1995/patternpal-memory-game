@@ -50,6 +50,9 @@ let secondCard = null;
 // Prevent user interaction during card check
 let lockBoard = false;
 
+// Track number of moves
+let moves = 0;
+
 // Attach click events to all cards 
 document.querySelectorAll(".card").forEach(card => {
 
@@ -73,6 +76,10 @@ document.querySelectorAll(".card").forEach(card => {
         }
         
         secondCard = card;
+
+        // Increment moves when second card is selected
+        moves++;
+        document.getElementById("moves").textContent = `Moves: ${moves}`;
 
         // Lock board during match check
         lockBoard = true;
