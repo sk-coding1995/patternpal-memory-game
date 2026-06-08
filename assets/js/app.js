@@ -61,6 +61,9 @@ document.querySelectorAll(".card").forEach(card => {
         // Prevent clicking the same card twice
         if (card === firstCard) return;
 
+        // Prevent clicking already matched cards
+        if (card.classList.contains("matched")) return;
+
         // Reveal card value
         card.textContent = card.dataset.value;
 
@@ -76,6 +79,10 @@ document.querySelectorAll(".card").forEach(card => {
 
         // Check for match
         if (firstCard.dataset.value === secondCard.dataset.value) {
+
+            // Mark both cards as matched (prevents future clicks)
+            firstCard.classList.add("matched");
+            secondCard.classList.add("matched");
 
             // Keep cards revealed
             resetSelection();
