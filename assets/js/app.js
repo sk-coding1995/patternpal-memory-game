@@ -91,6 +91,9 @@ document.querySelectorAll(".card").forEach(card => {
             firstCard.classList.add("matched");
             secondCard.classList.add("matched");
 
+            // Check if the game is finished
+            checkWin();
+
             // Keep cards revealed
             resetSelection();
 
@@ -113,4 +116,16 @@ function resetSelection() {
     firstCard = null;
     secondCard = null;
     lockBoard = false;
+}
+
+// Check if all cards are matched
+function checkWin() {
+    const matchedCards = document.querySelectorAll(".matched");
+
+    // If all cards are matched, show win message
+    if (matchedCards.lengh === document.querySelectorAll(".card").length) {
+        setTimeout(() => {
+            alert("You won! Moves: " + moves);
+        }, 300);
+    }
 }
