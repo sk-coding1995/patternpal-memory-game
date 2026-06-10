@@ -125,7 +125,11 @@ function checkWin() {
     // If all cards are matched, show win message
     if (matchedCards.length === document.querySelectorAll(".card").length) {
         setTimeout(() => {
-            alert("You won! Moves: " + moves);
+            const playAgain = confirm("Congratulations! You won in" + moves + "moves!\nplay again?");
+
+            if (playAgain) {
+                resetGame();
+            }
         }, 300);
     }
 }
