@@ -123,7 +123,7 @@ function checkWin() {
     const matchedCards = document.querySelectorAll(".matched");
 
     // If all cards are matched, show win message
-    if (matchedCards.lengh === document.querySelectorAll(".card").length) {
+    if (matchedCards.length === document.querySelectorAll(".card").length) {
         setTimeout(() => {
             alert("You won! Moves: " + moves);
         }, 300);
