@@ -118,6 +118,25 @@ function resetSelection() {
     lockBoard = false;
 }
 
+// Reset the entire game
+function resetGame() {
+
+    // Reset moves
+    moves = 0;
+    document.getElementById("moves").textContent = "Moves: 0";
+
+    // Reset cards visually and logically
+    document.querySelectorAll(".card").forEach(card => {
+        card.textContent = "?";
+        card.classList.remove("matched");
+    });
+
+    // Reset selection variables
+    firstCard = null;
+    secondCard = null;
+    lockBoard = false; 
+}
+
 // Check if all cards are matched
 function checkWin() {
     const matchedCards = document.querySelectorAll(".matched");
