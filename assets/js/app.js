@@ -94,8 +94,10 @@ document.querySelectorAll(".card").forEach(card => {
             // Check if the game is finished
             checkWin();
 
-            // Keep cards revealed
-            resetSelection();
+            // Slight delay before resetting selection
+            setTimeout(() => {
+                resetSelection();
+            }, 300);
 
         } else {
 
