@@ -129,9 +129,14 @@ function resetGame() {
     document.getElementById("moves").textContent = "Moves: 0";
 
     // Reset cards visually and logically
-    document.querySelectorAll(".card").forEach(card => {
-        card.textContent = "?";
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach((card, index) => {
         card.classList.remove("matched");
+        card.textContent = "?";
+
+        // Update card values to match shuffled array
+        card.dataset.value = cardValues[index];
     });
 
     // Reset selection variables
