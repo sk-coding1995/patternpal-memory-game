@@ -130,6 +130,9 @@ function resetGame() {
     moves = 0;
     document.getElementById("moves").textContent = "Moves: 0";
 
+    //Clear win message
+    document.getElementById("gameStatus").textContent = "";
+
     // Reset cards visually and logically
     const cards = document.querySelectorAll(".card");
 
@@ -153,9 +156,13 @@ function checkWin() {
 
     // If all cards are matched, show win message
     if (matchedCards.length === document.querySelectorAll(".card").length) {
-        setTimeout(() => {
-            const playAgain = confirm("Congratulations! You won in" + moves + "moves!\nplay again?");
+        setTimeout(() => { 
 
+            // Show message on screen
+            document.getElementById("gameStatus").textContent = "Congratulations! You won in " + moves + " moves!";
+
+            // Ask if player wants to play again
+            const playAgain = confirm("Congratulations! You won in " + moves + " moves!\n\n Play again?");
             if (playAgain) {
                 resetGame();
             }
