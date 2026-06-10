@@ -121,6 +121,9 @@ function resetSelection() {
 // Reset the entire game
 function resetGame() {
 
+    // Shuffle cards again
+    shuffle(cardValues);
+
     // Reset moves
     moves = 0;
     document.getElementById("moves").textContent = "Moves: 0";
