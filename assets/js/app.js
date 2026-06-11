@@ -53,6 +53,9 @@ let lockBoard = false;
 // Track number of moves
 let moves = 0;
 
+// Disable restart button at start
+document.getElementById("restartBtn").disabled = true;
+
 // Attach click events to all cards 
 document.querySelectorAll(".card").forEach(card => {
 
@@ -147,7 +150,8 @@ function resetGame() {
     // Reset selection variables
     firstCard = null;
     secondCard = null;
-    lockBoard = false; 
+    lockBoard = false;
+
 }
 
 // Check if all cards are matched
@@ -160,6 +164,9 @@ function checkWin() {
 
             // Show message on screen
             document.getElementById("gameStatus").textContent = "Congratulations! You won in " + moves + " moves!";
+
+            // Enable restart button after winning
+            document.getElementById("restartBtn").disabled = false;
 
             // Ask if player wants to play again
             const playAgain = confirm("Congratulations! You won in " + moves + " moves!\n\n Play again?");
