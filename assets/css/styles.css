@@ -43,3 +43,9 @@ h1 {
     border-color:#28a745;
     cursor: default;
 }
+
+/* Flipped card state */
+.card.flipped {
+    background-color: #555;
+    color: white;
+}

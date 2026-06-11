@@ -72,6 +72,7 @@ document.querySelectorAll(".card").forEach(card => {
 
         // Reveal card value
         card.textContent = card.dataset.value;
+        card.classList.add("flipped");
 
         if (!firstCard) {
             firstCard = card; 
@@ -108,6 +109,8 @@ document.querySelectorAll(".card").forEach(card => {
             setTimeout(() => {
                 firstCard.textContent = "?";
                 secondCard.textContent = "?";
+                firstCard.classList.remove("flipped");
+                secondCard.classList.remove("flipped");
                 resetSelection();
             }, 1000);
 
@@ -141,6 +144,7 @@ function resetGame() {
 
     cards.forEach((card, index) => {
         card.classList.remove("matched");
+        card.classList.remove("flipped");
         card.textContent = "?";
 
         // Update card values to match shuffled array
