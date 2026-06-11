@@ -152,6 +152,9 @@ function resetGame() {
     secondCard = null;
     lockBoard = false;
 
+    // Disable restart button until game is won again
+    document.getElementById("restartBtn").disabled = true;
+
 }
 
 // Check if all cards are matched
