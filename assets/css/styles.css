@@ -27,7 +27,8 @@ h1 {
     cursor: pointer;
     border: 2px solid #ddd;
     border-radius: 10px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
+
 }
 
 /* Hover affect for cards */
@@ -48,4 +49,5 @@ h1 {
 .card.flipped {
     background-color: #555;
     color: white;
+    transform: rotateY(180deg);
 }
