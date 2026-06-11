@@ -95,6 +95,10 @@ document.querySelectorAll(".card").forEach(card => {
             firstCard.classList.add("matched");
             secondCard.classList.add("matched");
 
+            // Remove flipped state so green shows
+            firstCard.classList.remove("flipped");
+            secondCard.classList.remove("flipped"); 
+
             // Check if the game is finished
             checkWin();
 
