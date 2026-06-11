@@ -169,3 +169,8 @@ function checkWin() {
         }, 300);
     }
 }
+
+// Restart button functionality
+document.getElementById("restartBtn").addEventListener("click", () => {
+    resetGame();
+});
