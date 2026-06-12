@@ -51,3 +51,11 @@ h1 {
     background-color: #555;
     transform: rotateY(180deg);
 }
+
+/* Win message styling */
+#gameStatus {
+    font-size: 20px;
+    font-weight: bold;
+    color: purple;
+    margin-top: 10px;
+}

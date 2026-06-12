@@ -174,17 +174,19 @@ function checkWin() {
         setTimeout(() => { 
 
             // Show message on screen
-            document.getElementById("gameStatus").textContent = "Congratulations! You won in " + moves + " moves!";
+            document.getElementById("gameStatus").textContent = "🎉 You completed the game in " + moves + " moves!";
 
             // Enable restart button after winning
             document.getElementById("restartBtn").disabled = false;
 
             // Ask if player wants to play again
-            const playAgain = confirm("Congratulations! You won in " + moves + " moves!\n\n Play again?");
-            if (playAgain) {
+            setTimeout(() => {
+                const playAgain = confirm("Play again?");
+                if (playAgain) {
                 resetGame();
             }
-        }, 300);
+        }, 500);
+    }, 300);
     }
 }
 
