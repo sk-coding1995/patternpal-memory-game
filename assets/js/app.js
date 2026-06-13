@@ -185,13 +185,6 @@ function checkWin() {
             // Enable restart button after winning
             document.getElementById("restartBtn").disabled = false;
 
-            // Ask if player wants to play again
-            winTimer = setTimeout(() => {
-                const playAgain = confirm("Play again?");
-                if (playAgain) {
-                resetGame();
-            }
-        }, 500);
     }, 300);
     }
 }
