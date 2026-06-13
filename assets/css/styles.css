@@ -44,6 +44,7 @@ h1 {
     border-color:#28a745;
     cursor: default;
     transform: scale(1.05);
+    box-shadow: 0 0 12px green;
 }
 
 /* Flipped card state */
