@@ -53,6 +53,8 @@ let lockBoard = false;
 // Track number of moves
 let moves = 0;
 
+let winTimer = null;
+
 // Disable restart button at start
 document.getElementById("restartBtn").disabled = true;
 
@@ -133,6 +135,10 @@ function resetSelection() {
 // Reset the entire game
 function resetGame() {
 
+    if (winTimer) {
+        clearTimeout(winTimer);
+    }
+
     // Shuffle cards again
     shuffle(cardValues);
 
@@ -171,7 +177,7 @@ function checkWin() {
 
     // If all cards are matched, show win message
     if (matchedCards.length === document.querySelectorAll(".card").length) {
-        setTimeout(() => { 
+        winTimer = setTimeout(() => { 
 
             // Show message on screen
             document.getElementById("gameStatus").textContent = "🎉 You completed the game in " + moves + " moves!";
@@ -180,7 +186,7 @@ function checkWin() {
             document.getElementById("restartBtn").disabled = false;
 
             // Ask if player wants to play again
-            setTimeout(() => {
+            winTimer = setTimeout(() => {
                 const playAgain = confirm("Play again?");
                 if (playAgain) {
                 resetGame();
