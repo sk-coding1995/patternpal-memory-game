@@ -40,3 +40,29 @@ Result: Win message displayed correctly and restart button enabled (Pass)
 Clicked the restart button after completing the game.
 Expected: Game resets and cards are shuffled.
 Result: Game resets correctly and moves returned to 0 (Pass)
+
+## Additional testing
+
+### Clicking same card twice
+
+Clicked the same card twice.
+Expected: The same card should not count as a move or break the game logic.
+Result: Second click was ignored and no issues occurred (Pass)
+
+### Clicking very fast
+
+Clicked multiple cards quickly.
+Expected: Game should prevent errors during rapid clicks.
+Result: Game handled input correctly without breaking (Pass)
+
+### Clicking matched cards
+
+Clicked cards that were already matched.
+Expected: Matched cards should not be clickable.
+Result: Matched cards could not be clicked again (Pass)
+
+### Restart button availability
+
+Attempted to click the restart button before completing the game. 
+Expected: Restart button should be disabled until the game is completed.
+Result: Restart button was disabled during gameplay and only became active after winning (pass)
