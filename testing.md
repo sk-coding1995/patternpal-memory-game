@@ -92,3 +92,27 @@ Result: The game now handles rapid input more reliably.
 Issue: Move counting needed to be controlled so that only valid second-card selections increased the total.  
 Fix: The counter was updated so moves only increase when a valid second card is selected.  
 Result: The move counter now reflects gameplay more accurately.
+
+### Bug 5 - Win condition did not trigger due to a typo
+
+Issue: The win message did not appear because the length property was written incorrectly.  
+Fix: The typo was corrected in the win condition logic.  
+Result: The game now detects when all cards are matched and displays the win message correctly.
+
+### Bug 6 - checkWin function was duplicated
+
+Issue: The checkWin function was accidentally duplicated, which caused incorrect structure in the JavaScript file.  
+Fix: The duplicate function was removed and the logic was kept in a single clean function.  
+Result: The win condition code is now easier to follow and works correctly.
+
+### Bug 7 - resetGame was referenced before being fully created
+
+Issue: The resetGame function was called in the win logic before the function had actually been added to the file.  
+Fix: The missing resetGame function was then implemented properly.  
+Result: The replay feature now works as intended.
+
+### Bug 8 - Reset shuffled the data but not the displayed card values
+
+Issue: After resetting the game, the card values were shuffled internally but were not updated correctly on screen.  
+Fix: Each card’s dataset value was updated after shuffling so the interface matched the shuffled array.  
+Result: The game now resets correctly with a new shuffled card order.
