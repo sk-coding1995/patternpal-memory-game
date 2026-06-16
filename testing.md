@@ -116,3 +116,27 @@ Result: The replay feature now works as intended.
 Issue: After resetting the game, the card values were shuffled internally but were not updated correctly on screen.  
 Fix: Each card’s dataset value was updated after shuffling so the interface matched the shuffled array.  
 Result: The game now resets correctly with a new shuffled card order.
+
+### Bug 9 - Restart button stayed enabled after reset
+
+Issue: After restarting the game, the restart button could remain enabled during gameplay.  
+Fix: The button was disabled again inside the resetGame function.  
+Result: The restart button is now only available after the game has been completed.
+
+### Bug 10 - Flipped styling overrode matched styling
+
+Issue: After adding visual flip feedback, matched cards were still showing the flipped styling instead of the matched state.  
+Fix: The flipped class was removed when a correct match was found.  
+Result: Matched cards now display the correct visual feedback.
+
+### Bug 11 - Delayed popup could still appear after restarting
+
+Issue: A delayed popup from the win logic could still appear after restarting the game.  
+Fix: The timeout was stored in a variable and cleared when the game reset.  
+Result: The popup no longer appears unexpectedly after restarting.
+
+### Bug 12 - Advanced flip card structure broke the layout
+
+Issue: A more advanced front/back card structure was tested, but it caused the card layout to break.  
+Fix: The advanced version was reverted and the simpler working flip system was kept.  
+Result: The game remained stable and visually clear without overcomplicating the implementation
