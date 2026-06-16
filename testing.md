@@ -66,3 +66,29 @@ Result: Matched cards could not be clicked again (Pass)
 Attempted to click the restart button before completing the game. 
 Expected: Restart button should be disabled until the game is completed.
 Result: Restart button was disabled during gameplay and only became active after winning (pass)
+
+## Bugs found and fixes applied
+
+### Bug 1 - Same card could be clicked twice
+
+Issue: The same card could be selected twice, which could affect the matching logic.  
+Fix: A condition was added to stop the same card being selected again during the same turn.  
+Result: Repeated clicks on the same card are now ignored.
+
+### Bug 2 - Matched cards were still clickable
+
+Issue: Cards that had already been matched could still be clicked again.  
+Fix: A check was added to ignore cards that already had the matched class.  
+Result: Matched cards can no longer be selected again.
+
+### Bug 3 - Rapid clicking caused interaction problems
+
+Issue: Clicking cards very quickly caused inconsistent behaviour while the game was checking matches.  
+Fix: A lock system was added to temporarily block user interaction during card checking.  
+Result: The game now handles rapid input more reliably.
+
+### Bug 4 - Move counter needed refining
+
+Issue: Move counting needed to be controlled so that only valid second-card selections increased the total.  
+Fix: The counter was updated so moves only increase when a valid second card is selected.  
+Result: The move counter now reflects gameplay more accurately.
