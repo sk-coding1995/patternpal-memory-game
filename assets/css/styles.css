@@ -60,3 +60,10 @@ h1 {
     color: purple;
     margin-top: 10px;
 }
+
+/* Instruction text styling */
+#instructions {
+    font-size: 16px;
+    color: #c40c0c;
+    margin-top: 10px;
+}
