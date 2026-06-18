@@ -65,7 +65,21 @@ When all pairs are matched, the game displays a clear completion message and all
 ### User story 4: handling missing pages
 The custom 404 page provides a clear message and returns the user to the game.
 
-![404 page showing redirect message and return button](assets/screenshots/game-404.png)
+![404 page showing redirect message and return button](assets/screenshots/game-404.png) 
+
+## Wireframe sketch and UX planning
+The wireframe was sketched in Microsoft Word to plan the layout of the desktop game screen, mobile version and custom 404 page before the final implementation was completed.
+
+The sketch helped define the main structure of the project, including:
+- the position of the game title
+- the move counter and restart button
+- the centred 4 x 4 game grid
+- the win feedback area
+- the layout of the custom 404 page
+
+The final implementation followed this planned structure closely, while small adjustments were made during development to improve usability and clarity.
+
+![Wireframe sketch for the PatternPal Memory Game](assets/screenshots/patternpal-wireframe.png)
 
 ## Technologies used
 - HTML5
@@ -77,4 +91,3 @@ The custom 404 page provides a clear message and returns the user to the game.
 - GitHub Pages for deployment
 - Microsoft Word (used to create the wireframe sketch)
 
-The wireframe was sketched in Microsoft Word to plan the layout of the desktop game screen, mobile version and custom 404 page.
