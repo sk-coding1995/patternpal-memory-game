@@ -54,6 +54,7 @@ let lockBoard = false;
 let moves = 0;
 
 let winTimer = null;
+const instructions = document.getElementById("instructions");
 
 // Disable restart button at start
 document.getElementById("restartBtn").disabled = true;
@@ -75,6 +76,10 @@ document.querySelectorAll(".card").forEach(card => {
         // Reveal card value
         card.textContent = card.dataset.value;
         card.classList.add("flipped");
+
+        if (instructions) {
+            instructions.style.display = "none";
+        }
 
         if (!firstCard) {
             firstCard = card; 
@@ -148,6 +153,10 @@ function resetGame() {
 
     //Clear win message
     document.getElementById("gameStatus").textContent = "";
+
+    if (instructions) {
+        instructions.style.display = "block";
+    }
 
     // Reset cards visually and logically
     const cards = document.querySelectorAll(".card");
