@@ -91,3 +91,37 @@ The final implementation followed this planned structure closely, while small ad
 - GitHub Pages for deployment
 - Microsoft Word (used to create the wireframe sketch)
 
+## Development lifecycle
+
+### Planning
+The project began with the idea of creating a simple interactive memory game that would be easy to understand and enjoyable to use. The main aim was to build a front-end application that focused on concentration, pattern recognition and user interaction without becoming too complex. Early planning identified the main layout of the page, the target audience and the key features needed for the game, including a move counter, card matching logic, restart control and end-game feedback.
+
+The project was planned as a single-page interactive game so that users could focus on playing without needing to navigate between different sections. A custom 404 page was also included later in development to improve the overall user experience and meet the project requirements more fully.
+
+### Structure
+The HTML structure was kept simple so the page would be easy to follow and accessible to different users. The heading, move counter, instruction text, restart button and game board were positioned in a clear order so the user could quickly understand the purpose of the page and how to interact with it.
+
+The game board was built dynamically using JavaScript rather than hardcoding each card into the HTML. This made the project easier to manage and allowed the card values to be shuffled and reset more efficiently during gameplay. A custom `404.html` page was also added to support navigation back to the main page if a missing page was accessed.
+
+### Styling
+CSS was added to give the game a consistent and readable appearance. The cards were styled with hover effects, matched-card feedback and visual changes when selected. The aim was to make the game look interactive without overcomplicating the design.
+
+Bootstrap was used to help manage layout structure and spacing, while custom CSS was used to control the specific visual style of the game. During development, small refinements were made to improve the appearance of the title, cards, win message and overall readability. The final styling remained simple so the game stayed clear and easy to use.
+
+### Interactivity
+JavaScript was used to create the main game functionality, including shuffling the cards, revealing values, checking for matches, counting moves, resetting the game and displaying a completion message when all pairs had been matched.
+
+The interactive logic was developed step by step and improved over time. Conditions were added to prevent invalid interactions such as selecting the same card twice, clicking matched cards again or clicking during a locked board state. A restart button was also implemented so the user could start a new game after completion, and the win feedback was refined so the end of the game felt clearer and more user friendly.
+
+### Testing and improvement
+Testing took place throughout the development process rather than only at the end. Core features such as card interaction, match checking, move counting, reset behaviour and win detection were tested manually as they were added. Additional testing was later used to check edge cases such as repeated clicks, rapid clicking and invalid interaction with matched cards.
+
+As bugs were found, they were recorded and corrected in later commits. This helped improve the overall reliability of the game and ensured that the interface and logic became more stable over time. Testing was also used to confirm that the 404 page redirected correctly and that the deployed version of the project matched the development version.
+
+## Reflection on the development process
+During development, the main focus of the project was to keep the game simple, clear and interactive while still meeting the requirements of the assessment. One of the main challenges was balancing visual design with stable functionality. For example, a more advanced flip-card effect was explored during development, but it introduced layout problems and made the game less reliable. Because of this, a simpler and more stable version was kept, which better suited the project and the intended user experience.
+
+Another important area of improvement was interaction control. Several checks had to be added to make sure the game handled user input properly, especially when cards were clicked repeatedly or too quickly. These refinements made the game more reliable and improved the flow of play.
+
+The project stayed close to the original planned structure, but it also changed in small ways during development as testing identified opportunities to improve clarity and usability. The final result is a simple but effective interactive memory game that meets its purpose, provides clear feedback to the user and demonstrates the use of structured HTML, custom styling and JavaScript logic in a front-end web application.
+
