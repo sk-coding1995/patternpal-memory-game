@@ -152,3 +152,25 @@ Testing was carried out throughout the development process rather than only at t
 
 The deployed version of the project was also checked to ensure it matched the development version and that the custom `404.html` page worked correctly on GitHub Pages.
 
+## Deployment procedure
+The project was deployed using GitHub Pages so the final version of the game could be accessed online.
+
+### Steps to deploy
+1. Open the project repository on GitHub.
+2. Go to **Settings**.
+3. Select **Pages** from the side menu.
+4. Under the source settings, choose the correct branch for deployment.
+5. Select the root folder if required.
+6. Save the settings.
+7. Wait for GitHub Pages to finish building the site.
+8. Open the live project link once deployment is complete.
+9. Carry out a final check to ensure the deployed version matches the local development version.
+
+### Deployed project checks
+After deployment, the live version of the project was tested to confirm that:
+- the main game page loaded correctly
+- card interaction still worked as expected
+- the move counter updated correctly
+- the restart button worked after completing the game
+- the custom `404.html` page redirected the user back to the main game
+
