@@ -125,3 +125,30 @@ Another important area of improvement was interaction control. Several checks ha
 
 The project stayed close to the original planned structure, but it also changed in small ways during development as testing identified opportunities to improve clarity and usability. The final result is a simple but effective interactive memory game that meets its purpose, provides clear feedback to the user and demonstrates the use of structured HTML, custom styling and JavaScript logic in a front-end web application.
 
+## Validation
+
+### Validation evidence
+The code was checked during development to ensure the structure and styling remained as clean and error free as possible. HTML was validated using the W3C Markup Validation Service and CSS was validated using the W3C CSS Validation Service. JavaScript was also reviewed to ensure there were no major errors affecting the game during user interaction.
+
+### HTML validation
+The main HTML pages used in the project were checked for structural issues and corrected where needed.
+
+- `index.html` – checked and corrected during development
+- `404.html` – checked after the custom page and redirect were added
+
+### CSS validation
+The stylesheet used for the project was reviewed and adjusted during development to ensure that the final styling remained consistent and valid.
+
+- `styles.css` – checked and corrected during development
+
+## Testing
+A full manual testing record for the project is included in the `testing.md` file. This includes:
+- core gameplay testing
+- edge case testing
+- bugs found during development
+- fixes applied to improve reliability and usability
+
+Testing was carried out throughout the development process rather than only at the end. This made it possible to identify problems early, improve interaction logic, and refine the final user experience.
+
+The deployed version of the project was also checked to ensure it matched the development version and that the custom `404.html` page worked correctly on GitHub Pages.
+
