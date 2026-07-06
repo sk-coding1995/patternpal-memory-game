@@ -15,6 +15,19 @@ Automated testing involves using tools or scripts to run repeated checks automat
 
 Automated testing was not used in this project because the application is relatively small and the main testing focus was based on user interaction, layout behaviour and visual feedback, which were more suitable to manual testing.
 
+## Javascript linting evidence
+
+The Jvascript used in this project was reviewed to ensure there were no major syntax or structural issues affecting gameplay.
+
+Particular attention was given to:
+- conditional logic used for card matching
+- Board locking during card checks
+- move counter updates
+- reset and win condition behaviour
+- avoiding internal errors during user interaction
+
+the final version of the Javascript runs without major issues affecting the game and does not generate console errors during normal use.
+
 ## Manual testing record
 
 ### Card flip
