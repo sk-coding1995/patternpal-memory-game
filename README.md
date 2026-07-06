@@ -174,3 +174,23 @@ After deployment, the live version of the project was tested to confirm that:
 - the restart button worked after completing the game
 - the custom `404.html` page redirected the user back to the main game
 
+## Credits and attribution
+
+### Third-party content used in the project
+The following external resources were used directly in the project:
+- Bootstrap 5 CDN for layout, spacing and button styling
+- Microsoft Word to create the wireframe sketch used during planning
+
+### Custom code and project work
+All HTML structure, CSS styling, JavaScript game logic, project content, layout decisions and documentation for this project were created by me.
+
+### Reference sources used during development
+The following resources were used for learning, reference and checking good practice during development:
+- Codeinstitute
+- FreeCodeCamp
+- Codecademy
+- MDN Web Docs
+- W3C Markup Validation Service
+- W3C CSS Validation Service
+- JSlint
+- YouTube
