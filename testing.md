@@ -139,4 +139,21 @@ Result: The popup no longer appears unexpectedly after restarting.
 
 Issue: A more advanced front/back card structure was tested, but it caused the card layout to break.  
 Fix: The advanced version was reverted and the simpler working flip system was kept.  
-Result: The game remained stable and visually clear without overcomplicating the implementation
+Result: The game remained stable and visually clear without overcomplicating the implementation.
+
+## Unfixed bugs
+
+### Minor issue - Mirrored emoji during flip effect
+
+Issue: When the card flip effect is active, the emoji can appear slightly mirrored during the animation.  
+Reason left unfixed: This does not affect the core functionality of the game and the current version was kept to avoid overcomplicating the implementation.  
+Impact: Visual only, with no effect on gameplay.
+
+## Final testing summary
+
+Overall, the PatternPal Memory Game was tested for functionality, interaction, usability and game flow throughout development. Core gameplay features such as card flipping, matching logic, move counting, restart behaviour and win feedback were checked manually as they were implemented.
+
+Additional testing was also carried out for edge cases, including repeated clicks, rapid clicking, clicking matched cards and custom 404 page behaviour. Bugs found during development were documented and fixed step by step in later commits.
+
+The final version of the game is stable, playable and provides clear feedback to the user, with only one minor visual issue remaining that does not affect the main functionality of the project.
+
