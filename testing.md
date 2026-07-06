@@ -3,6 +3,18 @@
 ## Testing overview
 The game was tested manually during development and after implementing core features. The aim of testing was to check functionality, usability, and consistency of the memory game.
 
+## Principles of manual and automated testing
+
+### Manual testing
+Manual testing involves a person checking the functionality of the application by using it directly and comparing the actual result with the expected result. This is useful for checking usability, layout, responsiveness, accessibility and general user interaction.
+
+In this project, manual testing was the most appropriate method because the game relies heavily on visual interaction and user behaviour, such as clicking cards, checking matches, restarting the game and confirming that the interface responds correctly.
+
+### Automated testing
+Automated testing involves using tools or scripts to run repeated checks automatically. This can be useful for larger applications where many tests need to be repeated often, especially when checking logic, form validation, or regression after code changes.
+
+Automated testing was not used in this project because the application is relatively small and the main testing focus was based on user interaction, layout behaviour and visual feedback, which were more suitable to manual testing.
+
 ## Manual testing record
 
 ### Card flip
