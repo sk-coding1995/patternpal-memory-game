@@ -133,13 +133,29 @@ The code was checked during development to ensure the structure and styling rema
 ### HTML validation
 The main HTML pages used in the project were checked for structural issues and corrected where needed.
 
-- `index.html` – checked and corrected during development
-- `404.html` – checked after the custom page and redirect were added
+- `index.html` – The initial validation check identified that the game board <section> did not contain an identifying heading. A visually hidden h2 heading was added inside the game board section. This improved the semantic structure and accessibility of the page without changing the visible layout.
+
+- `404.html` – The custom error page was checked to confirm that its metadata, page structure, redirect element and return link were correctly placed. Any structural issues identified during checking were corrected before the file was validated again.
+
+#### index.html
+![Validation screenshot for index.html](assets/screenshots/index-html-validation.png)
+
+#### 404.html
+![Validation screenshot for 404.html](assets/screenshots/404-html-validation.png)
 
 ### CSS validation
 The stylesheet used for the project was reviewed and adjusted during development to ensure that the final styling remained consistent and valid.
 
 - `styles.css` – checked and corrected during development
+
+#### styles.css
+![Validation screenshot for styles.css](assets/screenshots/css-validation.png)
+
+### JavaScript validation
+The JavaScript code was reviewed using JSLint. The first check identified formatting warnings including long lines, trailing whitespace and the strict handling of modern JvaScript syntax. The code was reviewed and formatted where appropriate.  
+
+#### app.js
+![Validation screenshot for app.js](assets/screenshots/jslint-validation.png)
 
 ## Testing
 A full manual testing record for the project is included in the `testing.md` file. This includes:
@@ -192,5 +208,5 @@ The following resources were used for learning, reference and checking good prac
 - MDN Web Docs
 - W3C Markup Validation Service
 - W3C CSS Validation Service
-- JSlint
+- JSLint
 - YouTube
