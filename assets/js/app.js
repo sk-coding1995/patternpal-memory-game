@@ -1,6 +1,16 @@
 console.log("JS connected");
 // Stores card values in pairs matching logic
-const cardValues = ["🍎","🍎","🍌","🍌","🍇","🍇","🥭","🥭","🍓","🍓","🍍","🍍","🥝","🥝","🍉","🍉"]; 
+const cardValues = [
+    "🍎","🍎",
+    "🍌","🍌",
+    "🍇","🍇",
+    "🥭","🥭",
+    "🍓","🍓",
+    "🍍","🍍",
+    "🥝","🥝",
+    "🍉","🍉"
+];
+
 /*
    Shuffle cards using Fisher-Yates algorithm
    Ensures each game starts with a random order
@@ -59,11 +69,11 @@ const instructions = document.getElementById("instructions");
 // Disable restart button at start
 document.getElementById("restartBtn").disabled = true;
 
-// Attach click events to all cards 
+// Attach click events to all cards
 document.querySelectorAll(".card").forEach(card => {
 
     card.addEventListener("click", () => {
-        
+       
         // Prevent interaction while cards are resetting
         if (lockBoard) return;
 
@@ -82,10 +92,10 @@ document.querySelectorAll(".card").forEach(card => {
         }
 
         if (!firstCard) {
-            firstCard = card; 
+            firstCard = card;
             return;
         }
-        
+
         secondCard = card;
 
         // Increment moves when second card is selected
@@ -104,7 +114,7 @@ document.querySelectorAll(".card").forEach(card => {
 
             // Remove flipped state so green shows
             firstCard.classList.remove("flipped");
-            secondCard.classList.remove("flipped"); 
+            secondCard.classList.remove("flipped");
 
             // Check if the game is finished
             checkWin();
@@ -186,10 +196,11 @@ function checkWin() {
 
     // If all cards are matched, show win message
     if (matchedCards.length === document.querySelectorAll(".card").length) {
-        winTimer = setTimeout(() => { 
+        winTimer = setTimeout(() => {
 
             // Show message on screen
-            document.getElementById("gameStatus").textContent = "🎉 You completed the game in " + moves + " moves!";
+            document.getElementById("gameStatus").textContent = 
+            "🎉 You completed the game in " + moves + " moves!";
 
             // Enable restart button after winning
             document.getElementById("restartBtn").disabled = false;
