@@ -67,6 +67,20 @@ The custom 404 page provides a clear message and returns the user to the game.
 
 ![404 page showing redirect message and return button](assets/screenshots/game-404.png) 
 
+### User story 5: responsive mobile layout
+The responsive layout keeps the title, controls, and game board clear on smaller screens. The cards remain organised in a 4x4 grid so the game can be played on mobile devices.
+
+#### Mobile start game
+The screenshot below shows the game when it first loads on a mobile device.
+
+![PatternPal Memory Game displayed on a mobile device at the start of the game](assets/screenshots/mobile-game-start.jpeg)
+
+#### Mobile game completed
+The screenshot below shows the completed game on a mobile device after all matching pairs have been found.
+
+![PatternPal Memory Game displayed on a mobile device after completing the game](assets/screenshots/mobile-game-complete.jpeg)
+
+
 ## Wireframe sketch and UX planning
 The wireframe was sketched in Microsoft Word to plan the layout of the desktop game screen, mobile version and custom 404 page before the final implementation was completed.
 
@@ -200,7 +214,7 @@ The stylesheet used for the project was reviewed and adjusted during development
 ![Validation screenshot for styles.css](assets/screenshots/css-validation.png)
 
 ### JavaScript validation
-The JavaScript code was reviewed using JSLint. The first check identified formatting warnings including long lines, trailing whitespace and the strict handling of modern JvaScript syntax. The code was reviewed and formatted where appropriate.  
+The JavaScript code was reviewed using JSLint. The first check identified formatting warnings including long lines, trailing whitespace and the strict handling of modern JavaScript syntax. The code was reviewed and formatted where appropriate.  
 
 #### app.js
 ![Validation screenshot for app.js](assets/screenshots/jslint-validation.png)
