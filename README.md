@@ -81,6 +81,54 @@ The final implementation followed this planned structure closely, while small ad
 
 ![Wireframe sketch for the PatternPal Memory Game](assets/screenshots/patternpal-wireframe.png)
 
+## Design Decisions
+
+### Colour Scheme
+A light background with dark cards was chosen to make the game board stand out. When a matching pair is found, the cards turn green to give the player clear visual feedback. Bootstrap's blue button style was used for the restart button because it is familiar and easy to identify.
+
+### Typography
+Arial was used throughout the project because it is simple, readable and supported by all modern browsers. Larger headings help identify each section, while smaller text is used for instructions and the move counter.
+
+### Layout
+The game was designed as a single-page application so users can start playing immediately. The title, instructions, move counter and restart button are positioned above the game board to create a clear flow. Bootstrap's grid system was used to keep the layout responsive on different screen sizes.
+
+### User Experience
+The interface was kept simple to avoid distractions. Instructions are shown when the page loads and disappear after the first card is selected. The move counter provides feedback during gameplay, while the restart button allows users to begin a new game after finishing.
+
+## Changes from the Original Wireframe
+The final version follows the original wireframe, although a few improvements were made during development.
+
+- Fruit emojis replaced the original text values to make the cards more engaging.
+- A short instruction message was added to help first-time users.
+- The completion message now displays the total number of moves.
+- Accessibility improvements, including a visually hidden heading, were added after validation.
+- Testing, validation evidence and the custom 404 page were added as the project progressed.
+
+These changes improved the usability of the application while keeping the original design and purpose.
+
+## User Stories and Features
+
+### Reveal and Match Cards
+The player can click two cards to reveal their values. Matching pairs remain visible, allowing the user to complete the game.
+
+### Track Progress
+A move counter records each valid turn so the player can keep track of their progress throughout the game.
+
+### Complete the Game
+When all matching pairs have been found, a completion message is displayed showing the total number of moves taken.
+
+### Restart the Game
+The restart button resets the move counter, shuffles the cards and starts a new game without refreshing the page.
+
+### Responsive Design
+Bootstrap's grid system keeps the game board organised across different screen sizes, making the application usable on desktop and mobile devices.
+
+### Easy to Understand
+Instructions are displayed when the page loads to help first-time users. These disappear after the first move to keep the game area clear.
+
+### Custom 404 Page
+A custom 404 page provides a link back to the main game if a user visits a page that does not exist.
+
 ## Technologies used
 - HTML5
 - CSS3
