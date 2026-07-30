@@ -219,6 +219,20 @@ The JavaScript code was reviewed using JSLint. The first check identified format
 #### app.js
 ![Validation screenshot for app.js](assets/screenshots/jslint-validation.png)
 
+## Lighthouse Testing
+Lighthouse was used to test the deployed version of the application. The audit measured performance, accessibility, best practices and search engine optimisation (SEO).
+
+The final Lighthouse results were:
+
+- Performance: **91**
+- Accessibility: **100**
+- Best Practices: **100**
+- SEO: **100**
+
+The results show that the application performs well overall. Accessibility, best practices and SEO achieved full marks, while the performance score remained in the green range with a score of 91.
+
+![Lighthouse testing results](assets/screenshots/lighthouse-results.png)
+
 ## Testing
 A full manual testing record for the project is included in the `testing.md` file. This includes:
 - core gameplay testing
