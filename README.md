@@ -187,6 +187,15 @@ Another important area of improvement was interaction control. Several checks ha
 
 The project stayed close to the original planned structure, but it also changed in small ways during development as testing identified opportunities to improve clarity and usability. The final result is a simple but effective interactive memory game that meets its purpose, provides clear feedback to the user and demonstrates the use of structured HTML, custom styling and JavaScript logic in a front-end web application.
 
+## Future Features
+
+If the project was developed further, there are several improvements that could be added to build on the current version of the game.
+
+- Introduce different difficulty levels by increasing the number of card pairs.
+- Add a timer alongside the move counter to give players another way to challenge themselves.
+- Store the player's best score using local storage so progress is saved between visits.
+- Allow players to choose from different card themes, such as animals, sports or shapes, instead of only fruit symbols.
+
 ## Validation
 
 ### Validation evidence
