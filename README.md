@@ -266,6 +266,32 @@ After deployment, the live version of the project was tested to confirm that:
 - the restart button worked after completing the game
 - the custom `404.html` page redirected the user back to the main game
 
+### Live project
+
+The deployed version of PatternPal Memory Game can be viewed here:
+
+[View the live PatternPal Memory Game](https://sk-coding1995.github.io/patternpal-memory-game/)
+
+### Running the project locally
+
+The project can also be downloaded and opened on a local computer.
+
+To clone the repository:
+
+1. Open the PatternPal repository on GitHub.
+2. Click the green **Code** button.
+3. Copy the HTTPS link.
+4. Open a terminal or Git Bash.
+5. Enter the following command:
+
+```bash
+git clone https://github.com/sk-coding1995/patternpal-memory-game.git
+```
+
+6. Open the downloaded project folder in Visual Studio Code.
+7. Launch the project using the Live Server extension or open 'index.html' in a web browser.
+
+
 ## Credits and attribution
 
 ### Third-party content used in the project
